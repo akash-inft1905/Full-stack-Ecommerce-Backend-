@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+      .thank-you {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+        color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order Confirmation</h1>
+      <p>Dear Customer,</p>
+      <p>
+        Your order has been successfully placed. Payment of <%= totalAmount %>
+        <%= currency %> has been received. Thank you for shopping with us!
+      </p>
+      <p class="thank-you">Thank you!</p>
+    </div>
+  </body>
+</html>
